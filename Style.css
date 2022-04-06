@@ -1,0 +1,51 @@
+:root {
+    --size: 70vh;
+}
+
+*,
+ ::after,
+ ::before {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: rgb(13, 107, 107);
+    display: grid;
+    place-items: center;
+}
+
+.ajedrez {
+    width: var(--size);
+    height: var(--size);
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.H {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.V {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.par {
+    background-color: white;
+}
+
+.impar {
+    background-color: black;
+}
